@@ -11,62 +11,10 @@ body{
     color: darkblue;
 }
 h1{
-    margin-bottom: 2em;
-}
-input{
-    margin-bottom: 1.3em;
-    margin-top: 1.3em;
-    width: 200px;
-    font-size: 1.5em;
-    border-radius: 7px;
-    border-color: black;
-}
-button{
-    width: 100px;
-    height: 30px;
-    font-size: 1.5;
-    border-color: black;
-    background-color: darkblue;
-    color: white;
-    border-radius: 7px;
-    cursor: pointer;
-}
-p1{ 
-    
-    color: darkred;
-}
-</style>
-
-
-<body>
-  <h1>
-    Finding the circumference of the circle
-  </h1>
-  <p>Enter radius in this box</p>
-  <input type='number' id='radius'>
-  <br>
+    margin-bo
   <button id='answer'>Get answer</button>
   <br><br>
-  
-  <p1 id='info'>
-  
-  
-  </p1>
-  
-  <script>
-  
-  const radius = document.getElementById('radius');
-const answer = document.getElementById('answer');
-const info = document.getElementById('info');
-const pi = 3.14159;
-let circumference;
-let rad;
 
-answer.onclick = function(){
-  rad = parseFloat(radius.value);
-  circumference = rad * 2 * pi;
-  info.textContent = `The circumference is ${circumference} units`;
-}
   </script>
   
 </body>
