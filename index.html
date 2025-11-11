@@ -31,7 +31,13 @@ button{
     border-radius: 7px;
     cursor: pointer;
 }
+p1{ 
+    
+    color: darkred;
+}
 </style>
+
+
 <body>
   <h1>
     Finding the circumference of the circle
@@ -40,5 +46,31 @@ button{
   <input type='number' id='radius'>
   <br>
   <button id='answer'>Get answer</button>
+  <br><br>
+  
+  <p1 id='info'>
+  
+  
+  </p1>
+  
+  <script>
+  
+  const radius = document.getElementById('radius');
+const answer = document.getElementById('answer');
+const info = document.getElementById('info');
+const pi = 3.14159;
+let circumference;
+let rad;
+
+answer.onclick = function(){
+  rad = parseFloat(radius.value);
+  circumference = rad * 2 * pi;
+  info.textContent = `The circumference is ${circumference} units`;
+}
+  </script>
+  
 </body>
+
+
+
 </html>
